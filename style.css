@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(67, 67, 139);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-family: cursive;
+
+}
+
+.container {
+    width: 30%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 10px solid black;
+}
+
+.one {
+    background-color: green ;
+}
+
+.two {
+    background-color: red;
+}
+
+.three {
+    background-color: yellow;
+}
+
+.four {
+    background-color: blue;
+}
+
+.push {
+    opacity: 0.1;
+}
+
+.game-over {
+    background-color: rgb(134, 21, 21);
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .one, .two, .three, .four {
+        width: 150px;
+        height: 150px;
+    }
+
+    #title {
+        font-size: 20px;
+        max-width: 80%;;
+        margin: 200px auto 0 auto;
+    }
+
+
+}
+
+

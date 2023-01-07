@@ -1,0 +1,58 @@
+1. The computer adds a color to the array.
+2. The user clicks a colour and adds to the user array
+3. A comparision is made - if the colour is the same success, if not then failure.
+4. The computer adds another colour.
+5. The user clicks again - the first colour in the gamepattern must equal to the first click if its a pass
+then the click must equal the second colour
+
+
+// const calc = (a, b, somefunc) => {
+//     let sum = a + b;
+//     somefunc(sum);
+// }
+
+
+// const showResult = (e) => {
+//    console.log(e);
+// }
+
+// calc(2, 3, showResult);
+
+
+// calc(2, 5, (event) => {
+//     console.log(event);
+// });
+
+// function anotherAddEventListener(typeOfEvent, callback) {
+//     var eventThatHappened = {
+//         eventType: "keypress",
+//         key: "p",
+//         duration: 2
+//     }
+
+//     callback(eventThatHappened);
+// }
+
+// somefunction("keypress", function(event){
+//     console.log(event);
+// })
+
+
+
+ for(var i = 0; i <=3; i++) {
+            document.getElementsByClassName("box")[i].addEventListener("click", function(){
+             var userChosenColor = this.classList[2];
+             userClickedPattern.push(userChosenColor);
+             playSound(userChosenColor)
+             fade(this);
+            
+            })
+         }
+
+
+
+
+
+
+
+
